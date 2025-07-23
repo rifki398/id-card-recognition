@@ -4,6 +4,8 @@ This Arduino-based project uses an RFID RC522 module to scan and recognize ID ca
 <p align="center">
   <img src="circuit.png" alt="Circuit" style="width:65%; height:auto;"/>
 </p> 
+
+
 ---
 
 ## Features
@@ -19,7 +21,7 @@ This Arduino-based project uses an RFID RC522 module to scan and recognize ID ca
 
 ---
 
-## 🧰 Components
+## Components
 
 | Component            | Qty | Notes                           |
 |----------------------|-----|----------------------------------|
@@ -30,13 +32,12 @@ This Arduino-based project uses an RFID RC522 module to scan and recognize ID ca
 | LEDs (Red, Green, Yellow) | 3 | Status indicators             |
 | Resistors 220Ω       | 3   | For LEDs                        |
 | Push Button (DPDT)   | 1   | For registration mode           |
-| Breadboard & Wires   | -   | Wiring and prototyping          |
 
 ---
 
-## 🔌 Pin Configuration
+## Pin Configuration
 
-### 📚 RFID RC522 → Arduino
+### RFID RC522 → Arduino
 
 | RC522 | Arduino UNO |
 |-------|-------------|
@@ -48,31 +49,30 @@ This Arduino-based project uses an RFID RC522 module to scan and recognize ID ca
 | 3.3V  | 3.3V        |
 | GND   | GND         |
 
-### 🔔 Buzzer
+### Buzzer
+Buzzer → D3  
+This project uses a low-level triggered buzzer. You can use a different type of buzzer, but it may require slight modifications to the circuit or code.
 
-- Buzzer → D3 (Low-level trigger)
-
-### 💡 LEDs
-
+### LEDs
+You can use a different type of LED color. 
 | LED     | Arduino |
 |---------|---------|
 | Red     | D4      |
 | Yellow  | D5      |
 | Green   | D6      |
+**Note**: Use a resistor to avoid overloading the LEDs!
 
-### 🖲️ Registration Button
-
+### Registration Button
 - COM → GND  
 - NO  → D7 (use `INPUT_PULLUP`)
 
-### 📟 LCD I2C
-
+### LCD I2C
 - SDA → A4  
 - SCL → A5  
 
 ---
 
-## 🧠 Program Flow
+## Program Flow
 
 1. **Idle (no card):**  
    - Yellow LED ON  
@@ -94,7 +94,7 @@ This Arduino-based project uses an RFID RC522 module to scan and recognize ID ca
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 - UID data is only stored in RAM.
 - Once Arduino is powered off, all registered cards are lost.
@@ -102,21 +102,15 @@ This Arduino-based project uses an RFID RC522 module to scan and recognize ID ca
 
 ---
 
-## 📷 Project Preview
 
-> _(You can insert your project photos here)_
+## Prerequites
+- [MFRC522](https://github.com/miguelbalboa/rfid)
+- [LiquidCrystal_I2C](https://github.com/johnrickman/LiquidCrystal_I2C)
 
----
-
-## 🔧 Future Improvements
-
-- [ ] Save UID to EEPROM for persistence
-- [ ] Add card removal feature
-- [ ] Encrypt UID for better security
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and free to modify for educational or development purposes.
 
