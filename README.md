@@ -9,12 +9,12 @@ This Arduino-based project uses an RFID RC522 module to scan and recognize ID ca
 ---
 
 ## Features
-- ✅ Register new RFID cards using a button
-- 🔒 Grant access only to registered cards
-- 💾 Card data stored in RAM (lost on power off)
-- 📟 LCD 16x2 (I2C) for status display
-- 🔊 Buzzer with different sounds for access granted or denied
-- 🔴🟡🟢 LEDs for status indicators:
+- Register new RFID cards using a button
+- Grant access only to registered cards
+- Card data stored in RAM (lost on power off)
+- LCD 16x2 (I2C) for status display
+- Buzzer with different sounds for access granted or denied
+- LEDs for status indicators:
   - Red: Access Denied
   - Green: Access Granted
   - Yellow: Standby (waiting for card)
