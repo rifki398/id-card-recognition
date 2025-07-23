@@ -104,6 +104,7 @@ You can use a different type of LED color.
 
 
 ## Prerequites
+Please make sure the following libraries already installed on your device:
 - [MFRC522](https://github.com/miguelbalboa/rfid)
 - [LiquidCrystal_I2C](https://github.com/johnrickman/LiquidCrystal_I2C)
 
