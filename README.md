@@ -37,7 +37,7 @@ This Arduino-based project uses an RFID RC522 module to scan and recognize ID ca
 
 ## Pin Configuration
 
-### RFID RC522 → Arduino
+### 1. RFID RC522
 
 | RC522 | Arduino UNO |
 |-------|-------------|
@@ -49,11 +49,11 @@ This Arduino-based project uses an RFID RC522 module to scan and recognize ID ca
 | 3.3V  | 3.3V        |
 | GND   | GND         |
 
-### Buzzer
+### 2. Buzzer
 Buzzer → D3  
 This project uses a low-level triggered buzzer. You can use a different type of buzzer, but it may require slight modifications to the circuit or code.
 
-### LEDs
+### 3. LEDs
 You can use a different type of LED color. 
 | LED     | Arduino |
 |---------|---------|
@@ -62,11 +62,11 @@ You can use a different type of LED color.
 | Green   | D6      |
 **Note**: Use a resistor to avoid overloading the LEDs!
 
-### Registration Button
+### 4. Registration Button
 - COM → GND  
 - NO  → D7 (use `INPUT_PULLUP`)
 
-### LCD I2C
+### 5. LCD I2C
 - SDA → A4  
 - SCL → A5  
 
